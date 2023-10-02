@@ -42,23 +42,29 @@ namespace Tema2_FormatoTexto
 
         private void Cursiva_Checked(object sender, RoutedEventArgs e)
         {
-            if (cursiva.IsChecked==true)
-            {
+           
                 text.FontStyle = FontStyles.Italic;
-            }
-            else
-                text.FontStyle = FontStyles.Normal;
+            
+                
             
         }
 
         private void Negrita_Checked(object sender, RoutedEventArgs e)
         {
-            if (negrita.IsChecked == true)
-            {
-                text.FontWeight = FontWeights.Black;
-            }
-            else
-                text.FontWeight = FontWeights.Normal;
+            
+            text.FontWeight = FontWeights.Black;
+            
+                
+        }
+
+        private void Cursiva_Unchecked(object sender, RoutedEventArgs e)
+        {
+            text.FontStyle = FontStyles.Normal;
+        }
+
+        private void Negrita_Unchecked(object sender, RoutedEventArgs e)
+        {
+            text.FontWeight = FontWeights.Normal;
         }
     }
 }
